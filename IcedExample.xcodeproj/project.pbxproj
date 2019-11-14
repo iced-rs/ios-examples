@@ -10,11 +10,11 @@
 		96517E7A23733540004181B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96517E7923733540004181B9 /* main.m */; };
 		96517E8A23733863004181B9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96517E8923733863004181B9 /* UIKit.framework */; };
 		96517E8C237338A2004181B9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96517E8B237338A2004181B9 /* Security.framework */; };
-		96A4E9D82378D4BB000C7238 /* libiced_ios_example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A4E9D62378D4BA000C7238 /* libiced_ios_example.a */; };
 		96A4E9D923792204000C7238 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96517E8D237338BB004181B9 /* CoreFoundation.framework */; };
 		96A4E9DB237922EF000C7238 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A4E9DA237922EF000C7238 /* CoreText.framework */; };
 		96A4E9DD237922FD000C7238 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A4E9DC237922FD000C7238 /* CoreGraphics.framework */; };
 		96A4E9E52379E4CB000C7238 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A4E9DE2379299C000C7238 /* Metal.framework */; };
+		96C952D6237DE1C300943DB8 /* libiced_ios_example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C952D4237DE1C300943DB8 /* libiced_ios_example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,13 +26,13 @@
 		96517E8923733863004181B9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		96517E8B237338A2004181B9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		96517E8D237338BB004181B9 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		96A4E9D62378D4BA000C7238 /* libiced_ios_example.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libiced_ios_example.a; sourceTree = "<group>"; };
-		96A4E9D72378D4BB000C7238 /* iced_ios_example.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iced_ios_example.h; sourceTree = "<group>"; };
 		96A4E9DA237922EF000C7238 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		96A4E9DC237922FD000C7238 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		96A4E9DE2379299C000C7238 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		96A4E9E02379E3DC000C7238 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		96A4E9E32379E497000C7238 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		96C952D4237DE1C300943DB8 /* libiced_ios_example.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libiced_ios_example.a; sourceTree = "<group>"; };
+		96C952D5237DE1C300943DB8 /* iced_ios_example.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iced_ios_example.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +44,9 @@
 				96517E8C237338A2004181B9 /* Security.framework in Frameworks */,
 				96A4E9E52379E4CB000C7238 /* Metal.framework in Frameworks */,
 				96A4E9D923792204000C7238 /* CoreFoundation.framework in Frameworks */,
+				96C952D6237DE1C300943DB8 /* libiced_ios_example.a in Frameworks */,
 				96A4E9DD237922FD000C7238 /* CoreGraphics.framework in Frameworks */,
 				96A4E9DB237922EF000C7238 /* CoreText.framework in Frameworks */,
-				96A4E9D82378D4BB000C7238 /* libiced_ios_example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +56,8 @@
 		96517E5B23733540004181B9 = {
 			isa = PBXGroup;
 			children = (
-				96517E8023733582004181B9 /* rust */,
+				96C952D5237DE1C300943DB8 /* iced_ios_example.h */,
+				96C952D4237DE1C300943DB8 /* libiced_ios_example.a */,
 				96517E6623733540004181B9 /* IcedExample */,
 				96517E6523733540004181B9 /* Products */,
 				96517E8423733846004181B9 /* Frameworks */,
@@ -78,15 +79,6 @@
 				96517E7923733540004181B9 /* main.m */,
 			);
 			path = IcedExample;
-			sourceTree = "<group>";
-		};
-		96517E8023733582004181B9 /* rust */ = {
-			isa = PBXGroup;
-			children = (
-				96A4E9D72378D4BB000C7238 /* iced_ios_example.h */,
-				96A4E9D62378D4BA000C7238 /* libiced_ios_example.a */,
-			);
-			path = rust;
 			sourceTree = "<group>";
 		};
 		96517E8423733846004181B9 /* Frameworks */ = {
@@ -306,6 +298,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/rust",
+					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iced.IcedExample;
@@ -331,6 +324,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/rust",
+					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iced.IcedExample;
