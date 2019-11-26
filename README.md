@@ -6,5 +6,5 @@
 * `make simulator-logs` will give you way too many logs from the simulator.
 
 ## Building with xcode buttons
-* `cd rust && make`
+* `make cargo`
 * `open IcedExample.xcodeproj` and push the play button.

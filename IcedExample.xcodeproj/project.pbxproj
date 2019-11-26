@@ -14,7 +14,8 @@
 		96A4E9DB237922EF000C7238 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A4E9DA237922EF000C7238 /* CoreText.framework */; };
 		96A4E9DD237922FD000C7238 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A4E9DC237922FD000C7238 /* CoreGraphics.framework */; };
 		96A4E9E52379E4CB000C7238 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A4E9DE2379299C000C7238 /* Metal.framework */; };
-		96C952D6237DE1C300943DB8 /* libiced_ios_example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C952D4237DE1C300943DB8 /* libiced_ios_example.a */; };
+		96C952D9238DD4EE00943DB8 /* libiced_ios_example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C952D4237DE1C300943DB8 /* libiced_ios_example.a */; };
+		96C952DB238DD51B00943DB8 /* resources in Resources */ = {isa = PBXBuildFile; fileRef = 96C952DA238DD51B00943DB8 /* resources */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		96A4E9E32379E497000C7238 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 		96C952D4237DE1C300943DB8 /* libiced_ios_example.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libiced_ios_example.a; sourceTree = "<group>"; };
 		96C952D5237DE1C300943DB8 /* iced_ios_example.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iced_ios_example.h; sourceTree = "<group>"; };
+		96C952DA238DD51B00943DB8 /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resources; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,11 +42,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96C952D9238DD4EE00943DB8 /* libiced_ios_example.a in Frameworks */,
 				96517E8A23733863004181B9 /* UIKit.framework in Frameworks */,
 				96517E8C237338A2004181B9 /* Security.framework in Frameworks */,
 				96A4E9E52379E4CB000C7238 /* Metal.framework in Frameworks */,
 				96A4E9D923792204000C7238 /* CoreFoundation.framework in Frameworks */,
-				96C952D6237DE1C300943DB8 /* libiced_ios_example.a in Frameworks */,
 				96A4E9DD237922FD000C7238 /* CoreGraphics.framework in Frameworks */,
 				96A4E9DB237922EF000C7238 /* CoreText.framework in Frameworks */,
 			);
@@ -58,6 +60,7 @@
 			children = (
 				96C952D5237DE1C300943DB8 /* iced_ios_example.h */,
 				96C952D4237DE1C300943DB8 /* libiced_ios_example.a */,
+				96C952DA238DD51B00943DB8 /* resources */,
 				96517E6623733540004181B9 /* IcedExample */,
 				96517E6523733540004181B9 /* Products */,
 				96517E8423733846004181B9 /* Frameworks */,
@@ -124,7 +127,7 @@
 		96517E5C23733540004181B9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1110;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Sebastian Imlay";
 				TargetAttributes = {
 					96517E6323733540004181B9 = {
@@ -155,6 +158,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96C952DB238DD51B00943DB8 /* resources in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,9 +290,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = W32CWPPFAJ;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = IcedExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -297,7 +301,6 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/rust",
 					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-lstdc++";
@@ -312,9 +315,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = W32CWPPFAJ;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = IcedExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,7 +326,6 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/rust",
 					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-lstdc++";
