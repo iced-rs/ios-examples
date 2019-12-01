@@ -10,7 +10,7 @@ crate-type = ["staticlib"]
 
 [dependencies]
 # For local development.
-# iced = { path = "../../iced/" }
-iced = { git = "https://github.com/simlay/iced", branch = "add-ios-xcode-project" }
+# iced = { path = "../iced/" }
+iced = { git = "https://github.com/simlay/iced", branch = "ios-support-wip" }
 color-backtrace = "0.2.3"
-
+env_logger = "0.7"
