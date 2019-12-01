@@ -15,6 +15,10 @@
 		96A4E9DD237922FD000C7238 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A4E9DC237922FD000C7238 /* CoreGraphics.framework */; };
 		96A4E9E52379E4CB000C7238 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A4E9DE2379299C000C7238 /* Metal.framework */; };
 		96CB380723936AD400ADD130 /* libiced_ios_example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CB380623936AD400ADD130 /* libiced_ios_example.a */; };
+		96CB380923936C4D00ADD130 /* resources in Resources */ = {isa = PBXBuildFile; fileRef = 96CB380823936C4D00ADD130 /* resources */; settings = {ASSET_TAGS = (Resources, ); }; };
+		96CB380B23936DF600ADD130 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CB380A23936DF600ADD130 /* Default-568h@2x.png */; };
+		96CB380D23936E0100ADD130 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96CB380C23936E0100ADD130 /* Images.xcassets */; };
+		96CB380F239371B200ADD130 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CB380E239371B200ADD130 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,10 @@
 		96A4E9E32379E497000C7238 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 		96CB380523936AD400ADD130 /* iced_ios_example.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iced_ios_example.h; sourceTree = "<group>"; };
 		96CB380623936AD400ADD130 /* libiced_ios_example.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libiced_ios_example.a; sourceTree = "<group>"; };
+		96CB380823936C4D00ADD130 /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resources; sourceTree = "<group>"; };
+		96CB380A23936DF600ADD130 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		96CB380C23936E0100ADD130 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		96CB380E239371B200ADD130 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +64,10 @@
 		96517E5B23733540004181B9 = {
 			isa = PBXGroup;
 			children = (
+				96CB380A23936DF600ADD130 /* Default-568h@2x.png */,
 				96CB380523936AD400ADD130 /* iced_ios_example.h */,
 				96CB380623936AD400ADD130 /* libiced_ios_example.a */,
+				96CB380823936C4D00ADD130 /* resources */,
 				96517E6623733540004181B9 /* IcedExample */,
 				96517E6523733540004181B9 /* Products */,
 				96517E8423733846004181B9 /* Frameworks */,
@@ -77,6 +87,8 @@
 			children = (
 				96517E7823733540004181B9 /* Info.plist */,
 				96517E7923733540004181B9 /* main.m */,
+				96CB380C23936E0100ADD130 /* Images.xcassets */,
+				96CB380E239371B200ADD130 /* Storyboard.storyboard */,
 			);
 			path = IcedExample;
 			sourceTree = "<group>";
@@ -124,6 +136,9 @@
 		96517E5C23733540004181B9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					Resources,
+				);
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Sebastian Imlay";
 				TargetAttributes = {
@@ -155,6 +170,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96CB380D23936E0100ADD130 /* Images.xcassets in Resources */,
+				96CB380F239371B200ADD130 /* Storyboard.storyboard in Resources */,
+				96CB380923936C4D00ADD130 /* resources in Resources */,
+				96CB380B23936DF600ADD130 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +304,7 @@
 		96517E7E23733540004181B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libstdc++";
 				CODE_SIGN_STYLE = Automatic;
@@ -311,6 +331,7 @@
 		96517E7F23733540004181B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libstdc++";
 				CODE_SIGN_STYLE = Automatic;
