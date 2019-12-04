@@ -1,5 +1,5 @@
 use iced::{
-    button, scrollable, slider, text_input, Background, Button, Checkbox,
+    button, image, scrollable, slider, text_input, Background, Button, Checkbox,
     Color, Column, Container, Element, HorizontalAlignment, Image, Length,
     Radio, Row, Sandbox, Scrollable, Settings, Slider, Text, TextInput,
 };
@@ -651,13 +651,9 @@ fn ferris<'a>(width: u16) -> Container<'a, StepMessage> {
     Container::new(
         // This should go away once we unify resource loading on native
         // platforms
-        if cfg!(target_arch = "wasm32") {
-            Image::new("resources/ferris.png")
-        } else {
-            Image::new(format!(
-                "resources/ferris.png",
-            ))
-        }
+        Image::new(image::Handle::from_memory(
+            include_bytes!("../resources/ferris.png").to_vec(),
+        ))
         .width(Length::Units(width)),
     )
     .width(Length::Fill)
